@@ -2,7 +2,7 @@
 html{
 
   overflow-x: hidden;
-  overflow-y: hidden;
+
   font-family: 'Orbitron', sans-serif;
   color: white;
   text-shadow:
@@ -127,9 +127,9 @@ footer.page-footer{
   position:absolute;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
-  height: 300px;
+  height: 200px;
   display:block;
-  top:770px;
+  top:800px;
 
 }
 .row{
@@ -209,42 +209,45 @@ i.fa.fa-steam, i.fa.fa-paypal{
 
   footer.page-footer{
 
-    height: 200px;
-    top:900px;
+    height: 190px;
+    top:890px;
   }
 }
-@media (max-height: 1000px){
+@media (max-height: 990px){
 
   footer.page-footer{
 
     height: 200px;
-    top:800px;
+    top:795px;
   }
 }
 @media (max-height: 950px){
 
   footer.page-footer{
 
-    height:350px;
-    top:690px;
+    height:230px;
+    top:720px;
   }
 }
 
+@media (max-height: 885px){
+
+  footer.page-footer{
+
+    height:200px;
+    top:680px;
+  }
+}
 @media (max-height: 850px){
 
   footer.page-footer{
 
-    height:300px;
-    top:590px;
-  }
-}
-@media (max-height: 750px){
+    top:620px;
+    height:230px;
 
-  footer.page-footer{
-display:none;
   }
 }
-@media (max-height: 390px){
+@media (max-height: 560px){
 
   .indicators{
 
