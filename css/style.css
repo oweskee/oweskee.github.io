@@ -169,6 +169,13 @@ i.fa.fa-steam, i.fa.fa-paypal{
     display:none;
   }
 }
+@media (max-width:1025px){
+
+  a.animated.flipInX{
+
+    left:0;
+  }
+}
 @media (max-width:750px){
 
   footer.page-footer{
@@ -194,6 +201,7 @@ i.fa.fa-steam, i.fa.fa-paypal{
 
   .material-icons{
 
+    top:300px;
     left:140px;
   }
 }
@@ -234,7 +242,7 @@ i.fa.fa-steam, i.fa.fa-paypal{
 
   footer.page-footer{
 
-    height:200px;
+    height:210px;
     top:680px;
   }
 }
