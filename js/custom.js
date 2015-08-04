@@ -8,7 +8,7 @@ $(document).ready(function(){
     }
 
 
-   $('.slider').slider({full_width:true, transition:2000, interval:4000});
+   $('.slider').slider({full_width:true, transition:2000, interval:4000, indicators:false});
 
    $(".button-collapse").sideNav();
 

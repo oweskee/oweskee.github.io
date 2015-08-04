@@ -255,14 +255,6 @@ i.fa.fa-steam, i.fa.fa-paypal{
 
   }
 }
-@media (max-height: 560px){
-
-  .indicators{
-
-    display:none;
-  }
-}
-
 /*****HEIGHT****/
 
 
