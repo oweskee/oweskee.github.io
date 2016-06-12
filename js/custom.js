@@ -8,14 +8,18 @@ $(document).ready(function(){
     }
 
 
-   $('.slider').slider({full_width:true, transition:2000, interval:4000, indicators:false});
+   $('.slider').slider({transition:2000, interval:4000, indicators:true});
 
    $(".button-collapse").sideNav();
 
-   $('a.animated.flipInX').on('click',function(){
 
-     $('a.animated.flipInX').addClass('slideOutRight');
 
-   });
 
  });
+
+     $('.slider-caption a').on('click',function(){
+
+       $('.slider-caption a').removeClass('flipInX');
+       $('.slider-caption a').addClass('slideOutRight');
+
+     });
