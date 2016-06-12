@@ -10,11 +10,13 @@ html{
      1px -1px 0 #000,
      -2px 2px 0 #000,
       2px 2px 0 #000;
+
 }
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: #4B4B4B;
 }
 main {
   flex: 1 0 auto;
@@ -32,25 +34,30 @@ table li a:hover, footer li a:hover{
 
 
 /**********************NAV*******************/
-
-
 .navbar-fixed{
-  height: 100px;
+  height: 80px;
 }
 nav{
-  height: 100px;
-  background-color:black;
+  height: 80px;
+
   box-shadow: 0 0 0 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa84c+49,ff7b0d+100,ff7b0d+100 */
+background: #ffa84c; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffa84c 49%, #ff7b0d 100%, #ff7b0d 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffa84c 49%,#ff7b0d 100%,#ff7b0d 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffa84c 49%,#ff7b0d 100%,#ff7b0d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+
 }
 nav .nav-wrapper{
-  height: 100px;
-  background-color:rgba(0,0,0,0.7);
+
 }
 .brand-logo{
-  height: 100px;
+  margin-left: 40px;
+  height: 80px;
 }
 .nav-items{
-  line-height: 100px;
+  line-height: 80px;
 }
 .nav-items > li{
   padding:0 35px 0 35px;
@@ -69,11 +76,14 @@ nav .nav-wrapper{
 /**********************MAIN WRAP*******************/
 .main-wrap{
   width: 80%;
-  margin: 0 auto;
-  background-color: grey;
+  margin: 0 auto 40px auto;
+  background-color: #343434;
 }
-.slides img{
-
+.slider{
+  height: 500px !important;
+}
+.slides{
+  height: 500px !important;
 }
 .slider-caption{
   text-align: center;
@@ -87,7 +97,6 @@ nav .nav-wrapper{
 .slider-caption h1{
     font-size: 4vw;
     margin-bottom: 0;
-
 }
 .slider-caption a{
   color:white;
@@ -96,64 +105,44 @@ nav .nav-wrapper{
   text-align: center;
   display: inline-block;
 }
+.slider .indicators{
+  z-index: 4;
+}
+.slider .indicators .indicator-item.active{
+  background-color:orange;
+}
+.slider .indicators:active{
+  color:black;
+}
 .main-wrap p{
+  width: 70%;
+  margin: 40px auto 0 auto;
+}
+.server-info{
   width: 80%;
-  margin: 0 auto;
-}
-table{
-  background-color:rgba(0,0,0,0.3);
-  width:40%;
-  margin:auto;
-  margin-top:100px;
-  margin-bottom:100px;
-}
-td{
+  margin: 40px auto 0 auto;
   text-align: center;
-  vertical-align: sub;
-  padding: 0 0 0 0;
-  color:white;
-}
-
-th{
-
-  text-align: center;
-  vertical-align: sub;
-  padding: 20px 0 0 0;
-  color:white;
-  font-size:32px;
 
 }
-#ts_name{
-
-  text-decoration: underline;
-  padding-right:10px;
-
-}
-#ins_name{
-
-    text-decoration: underline;
-    padding-left: 10px;
-
+#discord-img{
+  height: 95px;
 }
 
+/**********************FOOTER*******************/
 footer.page-footer{
-
   width:100%;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   height: 200px;
   display:block;
   top:800px;
-  background-color:black;
+  background-color: #343434;
 
 }
 .row{
-
   margin: 0 0 0 0;
 }
 
 i.fa.fa-steam, i.fa.fa-paypal{
-
   padding-left:5px;
-
 }
