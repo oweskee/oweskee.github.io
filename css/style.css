@@ -42,11 +42,11 @@ nav{
   height: 80px;
   box-shadow: 0 0 0 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa84c+49,ff7b0d+100,ff7b0d+100 */
-background: #ffa84c; /* Old browsers */
-background: -moz-linear-gradient(top,  #ffa84c 49%, #ff7b0d 100%, #ff7b0d 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #ffa84c 49%,#ff7b0d 100%,#ff7b0d 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #ffa84c 49%,#ff7b0d 100%,#ff7b0d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+  background: #ffa84c; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffa84c 49%, #ff7b0d 100%, #ff7b0d 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffa84c 49%,#ff7b0d 100%,#ff7b0d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffa84c 49%,#ff7b0d 100%,#ff7b0d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
 
 }
 nav .nav-wrapper{
@@ -73,7 +73,7 @@ nav .brand-logo{
   line-height: 80px;
 }
 .nav-items > li{
-  padding:0 35px 0 35px;
+  padding:0 20px;
   font-size:20px;
   vertical-align: middle;
 }
@@ -115,7 +115,7 @@ nav .brand-logo{
 .slider-caption h1{
   color: white;
     font-size: 7vw;
-    word-spacing: -30px;
+
     font-family: "pistolgrip";
     margin-bottom: 0;
 
@@ -123,10 +123,11 @@ nav .brand-logo{
 .slider-cta{
   -webkit-animation-duration: 8s;
   -moz-animation-duration: 8s;
+  font-size: 2vw;
 }
 #cta-button{
   color:white;
-  font-size: 24px;
+  font-size: 2vw;
   margin: 0 0 0 0;
   text-align: center;
   display: inline-block;
@@ -212,27 +213,29 @@ nav .brand-logo{
 .slider .indicators:active{
   color:black;
 }
-.main-wrap p{
-  width: 70%;
-  margin: 40px auto 0 auto;
-  color: white;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
+
 .server-info{
   width: 80%;
   margin: 40px auto 0 auto;
   text-align: center;
 }
 .server-info li{
+  margin: 10px auto;
 }
-.server-info li img{
+#discord-logo{
+  width:40%;
 }
 .server-banner{
   border: solid 2px #C05900;
   width: 80%;
 }
-
+.main-wrap p{
+  width: 80%;
+  margin: 40px auto 0 auto;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
 /**********************FOOTER*******************/
 footer.page-footer{
   width:100%;
