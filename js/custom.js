@@ -18,11 +18,11 @@ $(document).ready(function(){
 
  });
 
-     $('.slider-cta').on('click',function(){
+     $('.cta-animation').on('click',function(){
 
 
-       $('.slider-cta ').addClass('slideOutRight');
-       $('.slider-caption a ').addClass('infinate bounce');
+       $('.slider-cta').addClass('slideOutRight');
+       $('.slider-caption a').addClass('infinate bounce');
        $('.flame').show();
 
      });

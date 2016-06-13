@@ -1,9 +1,4 @@
 /***********************************MEDIA QUERIES*************************************/
-
-/*****WIDTH***/
-
-
-
 @media (max-width:1150px){
 
   .nav-items > li{
@@ -11,48 +6,43 @@
     padding: 0 0 0 0 !important;
   }
 }
-
 @media only screen and (max-width: 992px){
 nav .brand-logo {
     left:20%;
   }
   .nav-items > li{
-
     display: none;
   }
 }
 
 @media only screen and (max-width: 700px){
-  .main-wrap{
-    width: 90% !important;
+  .server-banner,
+  iframe{
+    width: 100% !important;
   }
+  .main-wrap,
   .server-info{
     width: 90% !important;
   }
   .main-wrap p{
     width: 80% !important;
   }
-  .server-banner{
-    width: 100% !important;
-  }
   #discord-logo{
     width: 70% !important;
   }
-  .slider-cta{
-  font-size: 4vw;
+  .slider-caption h1{
+    font-size: 9vw !important;
+  }
+  .slider-cta, #cta-button{
+  font-size: 4vw !important;
   }
 }
-
-
-/*****WIDTH****/
-
-
-
-
-/*****HEIGHT**/
-
-
-/*****HEIGHT****/
-
-
+@media only screen and (max-width: 550px){
+  #steam-sig{
+    display: none;
+  }
+  nav .brand-logo {
+      left:50%;
+      margin-left: 0 !important;
+    }
 /***********************************MEDIA QUERIES*************************************/
