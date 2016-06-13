@@ -16,6 +16,7 @@
 }
 html{
   font-family: "roboto";
+  overflow-x: hidden;
 }
 body {
   display: flex;
@@ -115,7 +116,6 @@ nav .brand-logo{
 .slider-caption h1{
   color: white;
     font-size: 7vw;
-
     font-family: "pistolgrip";
     margin-bottom: 0;
 
@@ -127,7 +127,6 @@ nav .brand-logo{
 }
 #cta-button{
   color:white;
-  font-size: 2vw;
   margin: 0 0 0 0;
   text-align: center;
   display: inline-block;
@@ -215,15 +214,16 @@ nav .brand-logo{
 }
 
 .server-info{
-  width: 80%;
+  width: 100%;
   margin: 40px auto 0 auto;
   text-align: center;
 }
 .server-info li{
   margin: 10px auto;
 }
-#discord-logo{
-  width:40%;
+iframe{
+  width:80%;
+  height: 400px;
 }
 .server-banner{
   border: solid 2px #C05900;

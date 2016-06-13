@@ -38,6 +38,9 @@ nav .brand-logo {
   #discord-logo{
     width: 70% !important;
   }
+  .slider-cta{
+  font-size: 4vw;
+  }
 }
 
 
