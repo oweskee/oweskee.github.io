@@ -26,17 +26,13 @@ body {
 main {
   flex: 1 0 auto;
 }
-
 table li, footer li {
   font-size:18px;
 }
-
 table li a:hover, footer li a:hover{
   text-decoration:underline;
   color:white;
 }
-
-
 
 /**********************NAV*******************/
 .navbar-fixed{
@@ -44,7 +40,6 @@ table li a:hover, footer li a:hover{
 }
 nav{
   height: 80px;
-
   box-shadow: 0 0 0 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffa84c+49,ff7b0d+100,ff7b0d+100 */
 background: #ffa84c; /* Old browsers */
@@ -57,9 +52,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', end
 nav .nav-wrapper{
 
 }
-.brand-logo{
+#nav-img{
+  display: inline-block;
+  width: 50%;
+}
+nav .brand-logo{
   margin-left: 40px;
+
+  display: inline-block;
+
+}
+#tg-logo{
   height: 80px;
+}
+#steam-sig{
+  margin-left: 300px;
+  margin-top: 10px;
 }
 .nav-items{
   line-height: 80px;
@@ -82,7 +90,7 @@ nav .nav-wrapper{
 .main-wrap{
   width: 80%;
   margin: 0 auto 40px auto;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
   background-color: #343434;
 }
 .slider{
@@ -194,12 +202,12 @@ nav .nav-wrapper{
   color:white;
   vertical-align: middle;
 }
-
 .slider .indicators{
   z-index: 4;
+  margin: 10px auto;
 }
 .slider .indicators .indicator-item.active{
-  background-color:orange;
+  background-color:#C05900;
 }
 .slider .indicators:active{
   color:black;
@@ -217,11 +225,8 @@ nav .nav-wrapper{
   text-align: center;
 }
 .server-info li{
-  margin: 10px auto;
 }
 .server-info li img{
-
-
 }
 .server-banner{
   border: solid 2px #C05900;
@@ -233,15 +238,46 @@ footer.page-footer{
   width:100%;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
-  height: 200px;
-  display:block;
-  top:800px;
+
   background-color: #343434;
 
 }
-.row{
-  margin: 0 0 0 0;
+#footer-links{
+margin: 0 auto;
+width:80%;
+text-align: center;
 }
+
+#footer-links ul{
+  display: inline-block;
+  width: 200px;
+  margin: 20px 20px;
+  vertical-align: text-top;
+  text-align: left;
+  color: white;
+}
+#footer-links ul li{
+
+}
+#footer-links ul li h5{
+  margin-top: 0;
+  text-decoration:underline;
+  font-size:32px;
+}
+#footer-links ul li a{
+  color: white;
+  text-decoration: none;
+  font-size:20px;
+  vertical-align: middle;
+}
+#footer-links ul li a:hover{
+  color: #C05900;
+  text-decoration: none;
+}
+#footer-links ul li img{
+  vertical-align: middle;
+}
+
 
 i.fa.fa-steam, i.fa.fa-paypal{
   color: white;

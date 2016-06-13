@@ -1,21 +1,9 @@
 /***********************************MEDIA QUERIES*************************************/
 
-/*****WIDTH***
+/*****WIDTH***/
 
-@media (max-width:1700px){
 
-  .nav-items > li{
 
-    padding:0 15px 0 15px;
-  }
-}
-@media (max-width:1400px){
-
-  .nav-items > li{
-
-    padding:0 0 0 0;
-  }
-}
 @media (max-width:1150px){
 
   .nav-items > li{
@@ -23,92 +11,22 @@
     display:none;
   }
 }
-@media (max-width:1025px){
 
-  a.animated.flipInX{
-
-    left:0;
+@media only screen and (max-width: 992px){
+nav .brand-logo {
+    left:20%;
   }
 }
-@media (max-width:750px){
 
-  footer.page-footer{
-
-  display:none;
-  }
-}
-@media (max-width:600px){
-
-  .filler{
-
-  height:73px;
-  }
-}
-@media (max-width:350px){
-
-  table{
-
-  display:none;
-  }
-}
-@media (max-width:323px){
-
-  .material-icons{
-
-    top:300px;
-    left:140px;
-  }
-}
 
 /*****WIDTH****/
 
 
 
 
-/*****HEIGHT**
+/*****HEIGHT**/
 
-@media (min-height: 1080px){
 
-  footer.page-footer{
-
-    height: 190px;
-    top:890px;
-  }
-}
-@media (max-height: 990px){
-
-  footer.page-footer{
-
-    height: 200px;
-    top:795px;
-  }
-}
-@media (max-height: 950px){
-
-  footer.page-footer{
-
-    height:230px;
-    top:720px;
-  }
-}
-
-@media (max-height: 885px){
-
-  footer.page-footer{
-
-    height:210px;
-    top:680px;
-  }
-}
-@media (max-height: 850px){
-
-  footer.page-footer{
-
-    top:620px;
-    height:230px;
-
-  }
-}
 /*****HEIGHT****/
 
 
