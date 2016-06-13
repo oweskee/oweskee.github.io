@@ -1,16 +1,21 @@
-
+@font-face {
+  font-family: "roboto";
+  src:url("../font/roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "blackhawk";
+  src:url("../font/blackhawk.otf");
+}
+@font-face {
+  font-family: "gunslinger";
+  src:url("../font/gunslinger.ttf");
+}
+@font-face {
+  font-family: "pistolgrip";
+  src:url("../font/pistolgrip.TTF");
+}
 html{
-
-
-
-  font-family: 'Orbitron', sans-serif;
-  color: white;
-  text-shadow:
-    -1px -1px 0 #000,
-     1px -1px 0 #000,
-     -2px 2px 0 #000,
-      2px 2px 0 #000;
-
+  font-family: "roboto";
 }
 body {
   display: flex;
@@ -77,6 +82,7 @@ nav .nav-wrapper{
 .main-wrap{
   width: 80%;
   margin: 0 auto 40px auto;
+  padding-bottom: 10px;
   background-color: #343434;
 }
 .slider{
@@ -92,19 +98,103 @@ nav .nav-wrapper{
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  z-index: 3;
+  z-index: 4;
+  text-shadow: 1px 1px 2px black,
+               0 0 25px black,
+               0 0 5px darkblue;
+
 }
 .slider-caption h1{
-    font-size: 4vw;
+  color: white;
+    font-size: 7vw;
+    word-spacing: -30px;
+    font-family: "pistolgrip";
     margin-bottom: 0;
+
 }
-.slider-caption a{
+.slider-cta{
+  -webkit-animation-duration: 8s;
+  -moz-animation-duration: 8s;
+}
+#cta-button{
   color:white;
   font-size: 24px;
   margin: 0 0 0 0;
   text-align: center;
   display: inline-block;
+  padding:10px;
+  background: rgba(0, 0, 0, 0.8);
+  vertical-align: middle;
+  border-radius: 10px;
 }
+
+#jet-flames{
+  display: inline-block;
+  margin:0;
+  width: 30px;
+  height: 30px;
+  position:relative;
+  transform-origin:center bottom;
+  animation-name: flicker;
+  animation-duration:3ms;
+  animation-delay:200ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  vertical-align: middle;
+}
+.flame{
+
+  bottom:0;
+  position:absolute;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  transform:rotate(-140deg) scale(1.5,1.5);
+}
+.yellow{
+  left:7.5px;
+  width: 15px;
+  height:15px;
+  background:gold;
+  box-shadow: 0px 0px 9px 4px gold;
+}
+
+.orange{
+  left:5px;
+  width: 20px;
+  height: 20px;
+  background:orange;
+  box-shadow: 0px 0px 9px 4px orange;
+}
+.red{
+  left:2.5px;
+  width: 25px;
+  height: 25px;
+  background:OrangeRed;
+  box-shadow: 0px 0px 5px 4px OrangeRed;
+}
+.white{
+  left:7.5px;
+  bottom:-2px;
+  width: 15px;
+  height: 15px;
+  background:white;
+  box-shadow: 0px 0px 9px 4px white;
+}
+@keyframes flicker{
+  0%   {transform: rotate(-1deg);}
+  20%  {transform: rotate(1deg);}
+  40%  {transform: rotate(-1deg);}
+  60%  {transform: rotate(1deg) scaleY(1.04);}
+  80%  {transform: rotate(-2deg) scaleY(0.92);}
+  100% {transform: rotate(1deg);}
+}
+.slider-cta a i{
+  color:white;
+  vertical-align: middle;
+}
+
 .slider .indicators{
   z-index: 4;
 }
@@ -117,15 +207,25 @@ nav .nav-wrapper{
 .main-wrap p{
   width: 70%;
   margin: 40px auto 0 auto;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 .server-info{
   width: 80%;
   margin: 40px auto 0 auto;
   text-align: center;
+}
+.server-info li{
+  margin: 10px auto;
+}
+.server-info li img{
+
 
 }
-#discord-img{
-  height: 95px;
+.server-banner{
+  border: solid 2px #C05900;
+  width: 80%;
 }
 
 /**********************FOOTER*******************/
@@ -144,5 +244,6 @@ footer.page-footer{
 }
 
 i.fa.fa-steam, i.fa.fa-paypal{
+  color: white;
   padding-left:5px;
 }

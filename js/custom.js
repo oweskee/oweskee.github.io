@@ -8,18 +8,21 @@ $(document).ready(function(){
     }
 
 
-   $('.slider').slider({transition:2000, interval:4000, indicators:true});
+   $('.slider').slider({transition:2000, interval:4000, indicators:true,});
 
    $(".button-collapse").sideNav();
+   $('.flame').hide();
 
 
 
 
  });
 
-     $('.slider-caption a').on('click',function(){
+     $('.slider-cta').on('click',function(){
 
-       $('.slider-caption a').removeClass('flipInX');
-       $('.slider-caption a').addClass('slideOutRight');
+
+       $('.slider-cta ').addClass('slideOutRight');
+       $('.slider-caption a ').addClass('infinate bounce');
+       $('.flame').show();
 
      });
