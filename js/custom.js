@@ -8,7 +8,7 @@ $(document).ready(function(){
     }
 
 
-   $('.slider').slider({transition:2000, interval:4000, indicators:true,});
+   $('.slider').slider({transition:2000, interval:4000, indicators:false});
 
    $(".button-collapse").sideNav();
    $('.flame').hide();
@@ -20,9 +20,7 @@ $(document).ready(function(){
 
      $('.cta-animation').on('click',function(){
 
-
-       $('.slider-cta').addClass('slideOutRight');
-       $('.slider-caption a').addClass('infinate bounce');
+       $('.slider-cta').addClass('slider-cta-after slideOutRight');
        $('.flame').show();
 
      });
