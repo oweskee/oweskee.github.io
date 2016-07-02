@@ -1,17 +1,19 @@
 /***********************************MEDIA QUERIES*************************************/
-@media (max-width:1150px){
+@media (max-width:1200px){
 
   .nav-items > li{
-
     padding: 0 0 0 0 !important;
   }
 }
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 1060px){
 nav .brand-logo {
-    left:20%;
+    left:10%;
   }
   .nav-items > li{
     display: none;
+  }
+  nav .button-collapse{
+    display:block !important;
   }
 }
 
@@ -37,12 +39,29 @@ nav .brand-logo {
   font-size: 4vw !important;
   }
 }
-@media only screen and (max-width: 550px){
-  #steam-sig{
+@media only screen and (max-width: 600px){
+  #nav-sig{
     display: none;
   }
+  #mobile-sig{
+    display: inline-block !important;
+    width: 100%;
+  }
+
+@media only screen and (max-width: 550px){
   nav .brand-logo {
-      left:50%;
+      left:100px;
       margin-left: 0 !important;
+    }
+    @media only screen and (max-width: 330px){
+      #cta-button{
+        width: 40%;
+        margin-left: 10px !important;
+
+      }
+      .slider-caption h1{
+        font-size: 10vw !important;
+        word-wrap: break-word;
+      }
     }
 /***********************************MEDIA QUERIES*************************************/
